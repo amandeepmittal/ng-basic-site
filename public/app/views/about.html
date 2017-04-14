@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-xs-10">
+      <h1>About Page</h1>
+      <strong>Data on this page is being fetch via <code>$http</code></strong>
+      <br>
+      <h3>Random Data:</h3>
+      <div ng-repeat="service in services">
+        <p>
+          <strong>Name:</strong> {{service.name}} | <strong>Gender:</strong> {{service.gender}}
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>

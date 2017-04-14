@@ -1,4 +1,4 @@
-<html lang="en">
+<html lang="en" ng-app="ngBasic">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -17,24 +17,33 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="/">
+        <a class="navbar-brand" href="#/">
           <i class="glyphicon glyphicon-picture"></i>
           Ng-Basic Site
         </a>
       </div>
-
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+          <li><a href="#/">Home</a></li>
+          <li><a href="#/about">About</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://github.com/amandeepmittal"><i class="ion-social-github"></i></a></li>
+          <li>
+            <a href="https://github.com/amandeepmittal" target="_blank">Built By: <i class="ion-social-github"></i></a>
+          </li>
+          <li>
+            <a href="#/">v1.0.0</a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
 
+  <div ng-view></div>
+
+  <script src="libs/angular/angular.min.js"></script>
+  <script src="libs/angular-route/angular-route.min.js"></script>
+  <script src="app.js"></script>
   <script src="libs/jquery/dist/jquery.min.js"></script>
   <script src="libs/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
