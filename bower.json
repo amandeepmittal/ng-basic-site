@@ -1,0 +1,21 @@
+{
+  "name": "ng-basic-site",
+  "description": "",
+  "main": "server.js",
+  "authors": [
+    "Aman Mittal <amandeepmittal@live.com> (http://amandeepmittal.github.io/)"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.3.6",
+    "bootstrap": "^3.3.7"
+  }
+}
